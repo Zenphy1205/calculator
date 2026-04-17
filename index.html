@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora Ultra</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+<div class="calculadora">
+    <div class="toggle" onclick="toggleMode()">🌙 / ☀️</div>
+    <input id="display" disabled>
+
+    <div class="botoes">
+        <!-- funções -->
+        <button class="func" onclick="add('Math.sin(')">sin</button>
+        <button class="func" onclick="add('Math.cos(')">cos</button>
+        <button class="func" onclick="add('Math.tan(')">tan</button>
+        <button class="func" onclick="add('Math.sqrt(')">√</button>
+
+        <button class="func" onclick="integralPrompt()">∫</button>
+        <button class="func" onclick="sumPrompt()">Σ</button>
+        <button class="func" onclick="prodPrompt()">Π</button>
+        <button onclick="clearDisplay()">C</button>
+
+        <!-- NOVO -->
+        <button onclick="add('(')">(</button>
+        <button onclick="add(')')">)</button>
+        <button class="operador" onclick="add('**')">xʸ</button>
+        <button class="operador" onclick="add('/')">÷</button>
+
+        <!-- números -->
+        <button onclick="add('7')">7</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('9')">9</button>
+        <button class="operador" onclick="add('*')">×</button>
+
+        <button onclick="add('4')">4</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('6')">6</button>
+        <button class="operador" onclick="add('-')">-</button>
+
+        <button onclick="add('1')">1</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('3')">3</button>
+        <button class="operador" onclick="add('+')">+</button>
+
+        <button onclick="add('0')">0</button>
+        <button onclick="add('.')">.</button>
+        <button class="igual" onclick="calc()">=</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
